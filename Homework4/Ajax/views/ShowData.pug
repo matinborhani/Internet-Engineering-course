@@ -1,0 +1,67 @@
+doctype html
+html
+    head
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript' src='/javascripts/func.js')
+    title = "جدول اطلاعات"
+        style
+            include ./style1.css
+
+
+    body(onload="load()")
+        div.My_header
+            div.row(dir="rtl")
+                div.col-md-3(style="padding-right: 5%;padding-top:0.5%;font-size: x-large")
+
+                div.col-md-3(style="padding-right: 5%;padding-top:0.5%;font-size: x-large")
+
+                div.col-md-3(style="padding-right: 5%;padding-top:0.5%;font-size: x-large")
+                    a(href="http://localhost:8080/getall/1") لیست افراد
+                div.col-md-3(style="padding-right: 5%;padding-top:0.5%;font-size: x-large")
+                    a(href="http://localhost:8080/home") خانه
+
+
+        div(id="Data")
+            table.table.table-striped(style='width:80%')
+                thead
+                    tr
+                        th(scope="col") Name
+                        th(scope="col") Email
+                        th(scope="col") Address
+                    <br>
+                tbody
+                each person in persons
+                    tr(style='text-align:center')
+                        th=person.name
+                        th=person.email
+                        th=person.addr
+
+
+
+        div.pagination
+            a(href="http://localhost:8080/getall/1" id="page1") 1
+            a(href="http://localhost:8080/getall/2" id="page2") 2
+            a(href="http://localhost:8080/getall/3" id="page3") 3
+            a(href="http://localhost:8080/getall/4" id="page4") 4
+            a(href="http://localhost:8080/getall/5" id="page5") 5
+
+        p.titleSearch جست و جو
+        div.formSearch(dir=rtl)
+            input.form-control.w-75.p-3(id="name" name = "name" placeholder="نام مورد نظر را وارد کنید" type="text" onkeyup="search()")
+        div(id="SearchData")
+            table.table.table-striped(id="myTable" style='width:80%')
+                //thead
+                //    tr
+                //        th(scope="col") Name
+                //        th(scope="col") Email
+                //        th(scope="col") Address
+                //    <br>
+                tbody(id="tbody")
+                    tr(style='text-align:center')
+                        th(id="thName")
+                        th(id="thEmail")
+                        th(id="thAddr")

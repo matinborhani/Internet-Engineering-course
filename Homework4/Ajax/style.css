@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Sans;
+  src: url(./fonts/Iranian_Sans.ttf);
+}
+@font-face {
+  font-family: Nazanin;
+  src: url(fonts/B_Nazanin.ttf);
+}
+.title {
+  font-family: Sans;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 2%;
+  color: #00B7FF;
+}
+
+.form {
+  font-family: Nazanin;
+  font-size: medium;
+}
+
+tr {
+  text-align: center;
+  color: #e8e8e8;
+}
+th {
+  text-align: center;
+  color: #e8e8e8;
+}
+
+/*# sourceMappingURL=style1.css.map */
