@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="TestValidation.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>خانه</title>
+<style>
+    .My_header{
+        background-color: #e8e8e8;
+        width: 100%;
+        height: 50px;
+
+    }
+
+</style>
+</head>
+<body>
+<div class="My_header">
+    <div class="row" dir="rtl">
+
+        <div class="col-md-3" style="padding-right: 5%;padding-top:0.5%;font-size: x-large">
+
+        </div>
+        <div class="col-md-3" style="padding-right: 5%;padding-top:0.5%;font-size: x-large">
+
+        </div>
+        <div class="col-md-3" style="padding-right: 5%;padding-top:0.5%;font-size: x-large">
+            <a href="http://localhost:8080/getall/1">     لیست افراد      </a>
+        </div>
+        <div class="col-md-3" style="padding-right: 5%;padding-top:0.5%;font-size: x-large">
+            <a href="http://localhost:8080/home">        خانه    </a>
+
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <p class="title" style="text-align: right">متین برهانی - 9526703</p>
+        <form class="wow animated slideInRight " action="http://localhost:8080/" method="post">
+            <div class="my_form" dir="rtl">
+                <div class="form-group" >
+                    <label for="input_user">نام کاربری</label>
+                    <input type="text" class="form-control" id="input_user" aria-describedby="emailHelp" name="name" required placeholder="نام کاربری را وارد کنید">
+                </div>
+                <div class="form-group">
+                    <label for="input_email">ایمیل</label>
+                    <input type="text" class="form-control" id="input_email" name="email" onblur="ValidateEmail(this.value)"  placeholder="ایمیل خود را وارد کنید" >
+                </div>
+                <div class="form-group">
+                    <label for="input_address">آدرس</label>
+                    <input type="text" class="form-control" id="input_address" name="addr" required placeholder="آدرس خود را وارد کنید">
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" value="submit" class="btn btn-primary btn-lg btn-block" onsubmit="allValidation()">تایید</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
