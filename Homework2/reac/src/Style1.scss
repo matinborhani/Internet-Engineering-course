@@ -1,0 +1,35 @@
+@font-face {
+  font-family: SansFont;
+  src: url(fonts/Iranian_Sans.ttf);
+}
+@font-face {
+  font-family: NazaninFont;
+  src: url(fonts/BNazanin.ttf);
+}
+
+$fontNazanin: NazaninFont;
+$fontSarif: SansFont;
+p{
+  font-family: $fontNazanin;
+}
+@mixin Style-Form {
+  font-size: 18px;
+  padding: 0;
+  margin: 2%;
+}
+
+form{
+  @include Style-Form;
+
+}
+
+.button-basic{
+  font-size: 15px;
+  width: 10%;
+  font-family: $fontNazanin;
+}
+.button-submit{
+  @extend .button-basic;
+  margin-right: 9%;
+}
+
