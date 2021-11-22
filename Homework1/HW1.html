@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW1</title>
+    <!--Bootstrap Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/MyStyle.css">
+    <script src="js/wow.js"></script>
+</head>
+<script>
+    new WOW().init();
+</script>
+
+<script>
+    new WOW.init();
+</script>
+<body>
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>
+
+    <!--Carousels-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin:auto;width: 50%">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="./images/silver%20balls.jpg" alt="fury">
+        </div>
+
+        <div class="item">
+            <img src="./images/Max_Payne.jpg" alt="professonal">
+        </div>
+
+        <div class="item">
+            <img src="./images/Call_Of_Duty.jpg" alt="Silver balls">
+        </div>
+    </div>
+
+</div>
+    <!--Cards-->
+<div class="wow animated slideInRight " style="width: 50%;margin: 2% auto">
+    <h2>Card Header and Footer</h2>
+    <div class="card">
+        <div class="card-header"><img src="images/profile.jpg" ></div>
+        <div class="card-body">Matin Borhani</div>
+        <div class="card-footer">Student at Yazd Uni</div>
+    </div>
+</div>
+    <!--SVG Format-->
+<svg width="100" height="100" style="margin-left: 5%">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+    <!--Forms-->
+<form class="wow animated slideInRight ">
+    <div class="my_form" dir="rtl">
+    <div class="form-group" >
+        <label for="input_user">نام کاربری</label>
+        <input type="text" class="form-control" id="input_user" aria-describedby="emailHelp" placeholder="نام کاربری را وارد کنید">
+    </div>
+    <div class="form-group">
+        <label for="input_password">رمز عبور</label>
+        <input type="password" class="form-control" id="input_password" placeholder="رمز خود را وارد کنید">
+    </div>
+    <div class="form-group">
+        <label for="input_email">ایمیل</label>
+        <input type="email" class="form-control" id="input_email" placeholder="ایمیل خود را وارد کنید">
+    </div>
+    <div class="form-group">
+        <label for="input_tel">تلفن</label>
+        <input type="tel" class="form-control" id="input_tel" placeholder="تلفن خود را وارد کنید">
+    </div>
+    <div class="form-group">
+        <label for="input_address">آدرس</label>
+        <input type="text" class="form-control" id="input_address" placeholder="آدرس خود را وارد کنید">
+    </div>
+
+    <button type="submit" class="btn btn-primary">ثبت اطلاعات</button>
+    </div>
+</form>
+
+<footer class="container-fluid My_footer" dir="rtl" style="position: relative" >
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 ">
+            <a target="_blank" href="mailto:borhanimatin46@gmail.com">آدرس ایمیل: borhanimatin46@gmail.com</a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 ">
+            <p><a href="http://matinborhani.ir/" target="_blank">نویسنده: متین برهانی</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-sm-12" >
+           <a href="https://yazd.ac.ir/" target="_blank"><img src="images/Yazd-Uni-logo.png" alt="Yazd-Uni-Logo"></a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

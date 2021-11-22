@@ -1,0 +1,5 @@
+1) SVG Graphics
+2) Footer
+3) Address in forms
+4) Font
+5) Animations
